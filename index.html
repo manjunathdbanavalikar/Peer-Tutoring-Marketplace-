@@ -1,112 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peer Tutoring Marketplace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Tutoring Marketplace</title>
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <h1>PeerLearn Marketplace</h1>
-    <p>Find the best peer tutors on campus</p>
-    
-    <!-- Navigation Menu -->
+<header>
+    <h1>Peer Tutoring Marketplace</h1>
+    <p>Learn from talented student tutors.</p>
+
     <nav>
-      <ul>
-        <li><a href="#tutors">Tutors</a></li>
-        <li><a href="#booking">Book a Session</a></li>
-        <li><a href="#about">About Us</a></li>
-      </ul>
+        <a href="index.html">Home</a> |
+        <a href="tutor.html">Tutor Profile</a> |
+        <a href="become-a-tutor.html">Become a Tutor</a>
     </nav>
-  </header>
+</header>
 
-  <!-- Main Content Area -->
-  <main>
+<main>
 
-    <!-- Tutors Section -->
-    <section id="tutors">
-      <h2>Featured Tutors</h2>
-
-      <!-- Tutor 1: With Video Intro -->
-      <article>
-        <h3>Aisha Khan</h3>
-        <p><strong>Subject:</strong> Mathematics</p>
-        <p>i am a passionate mathematics tutor with over 5 years of experience.</p>
-        <p> i am a passionate mathematics tutor with over 5 years of experience.</p>
-        <p><strong>Rate:</strong> ₹300 / hour</p>
-        <p><strong>Bio:</strong> Passionate about algebra and calculus. Helping students build confidence in math.</p>
-        
-        <h4>Tutor Introduction Video</h4>
-        <video width="320" height="240" controls poster="aisha-thumbnail.jpg">
-          <source src="aisha-intro.mp4" type="video/mp4">
-          <source src="aisha-intro.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
-      </article>
-
-      <!-- Tutor 2: With Audio Testimonial -->
-      <article>
-        <h3>Rahul Sharma</h3>
-        <p><strong>Subject:</strong> Computer Science</p>
-        <p><strong>Rate:</strong> ₹350 / hour</p>
-        <p><strong>Bio:</strong> Specializes in Data Structures, Algorithms, and Web Development.</p>
-
-        <h4>Student Audio Testimonial</h4>
-        <audio controls>
-          <source src="rahul-testimonial.mp3" type="audio/mpeg">
-          <source src="rahul-testimonial.ogg" type="audio/ogg">
-          Your browser does not support the audio element.
-        </audio>
-      </article>
-
+    <section>
+        <h2>Welcome</h2>
+        <p>
+            Find experienced student tutors for Mathematics,
+            Science, Programming, and more.
+        </p>
     </section>
 
-    <!-- Booking Form Section -->
-    <section id="booking">
-      <h2>Book a Tutoring Session</h2>
-      
-      <form action="/submit-booking" method="POST">
-        <div>
-          <label for="full-name">Full Name:</label>
-          <input type="text" id="full-name" name="full_name" required>
-        </div>
+    <section>
+        <h2>Featured Tutors</h2>
 
-        <div>
-          <label for="email-address">Email Address:</label>
-          <input type="email" id="email-address" name="email" required>
-        </div>
+        <article>
+            <h3>Rahul Sharma</h3>
+            <p>Mathematics Tutor | ₹300/hour</p>
+        </article>
 
-        <div>
-          <label for="select-tutor">Select Tutor:</label>
-          <select id="select-tutor" name="tutor" required>
-            <option value="">-- Please choose an option --</option>
-            <option value="aisha-khan">Aisha Khan (Mathematics)</option>
-            <option value="rahul-sharma">Rahul Sharma (Computer Science)</option>
-          </select>
-        </div>
+        <article>
+            <h3>Priya Patel</h3>
+            <p>Science Tutor | ₹350/hour</p>
+        </article>
 
-        <div>
-          <label for="session-date">Session Date:</label>
-          <input type="date" id="session-date" name="session_date" required>
-        </div>
-
-        <div>
-          <label for="additional-notes">Notes or Topics to Cover:</label>
-          <textarea id="additional-notes" name="notes" rows="4"></textarea>
-        </div>
-
-        <button type="submit">Submit Booking</button>
-      </form>
+        <article>
+            <h3>Aman Verma</h3>
+            <p>Programming Tutor | ₹400/hour</p>
+        </article>
     </section>
 
-  </main>
+    <section>
+        <h2>Book a Session</h2>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2026 PeerLearn Marketplace. All rights reserved.</p>
-  </footer>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" required><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <select id="subject">
+                <option>Mathematics</option>
+                <option>Science</option>
+                <option>Programming</option>
+            </select><br><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peer Tutoring Marketplace</p>
+</footer>
 
 </body>
 </html>
